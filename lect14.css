@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: #d0cd19;
+    overflow: hidden; /* Yeh wali property image ko box ke andar bada kr deti hai*/ 
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    transition: all ease 1s;
+    /*margin-left: 10%;*/
+}
+#box:hover img{
+    scale: 1.2;
+}

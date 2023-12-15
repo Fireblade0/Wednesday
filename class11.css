@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#Parent{
+    height: 300px;
+    width: 300px;
+    background-color: salmon;
+}
+#Child
+{
+    height: 50%;
+    width: 50%;
+    background-color: blueviolet;
+    position: relative;
+    top: 50%;
+    left: 30%;
+}

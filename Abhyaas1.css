@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/*#Box1
+{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg);
+    background-size: cover;
+    background-position: centre;
+}*/
+h1{
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  font-style:italic;
+}

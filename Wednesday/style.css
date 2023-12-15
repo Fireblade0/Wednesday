@@ -1,0 +1,281 @@
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Extrabold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Extralight.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: neuton;
+    src: url(./Neuton-Regular.ttf);
+    font-weight: 500;
+}
+
+/* Koi project github pr upload hai computer mein us file mein humne kuch change kiye aur isko github pr bhi 
+update krna hoga tab hum terminal mein jayenge aur likhenge
+   * git add .elem
+   * git commit -m "Jo bh message dena hai"
+   * git push -u origin main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neuton;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Percentage Parent ke size according adjust krta hai */
+/*par pixel Parent pr depend nhi krta*/
+/*vh = viewport height screen ke height ke barabr size leta hai*/
+/* vw = viewport width screen ke width ke hisaab se kaam krta hai */
+
+#main{
+    background-color: #F5F3EA;
+    overflow-x: hidden;
+}
+
+#page1 {
+    min-height: 100vh;
+    width:100vw;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+
+#nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    gap: 12vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#nav-part3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#nav-part2 h4{
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#nav h1{
+    font-family: neuton;
+    font-size: 38px;
+}
+#nav h1 span{
+    font-family: neuton;
+    color: #FF5858;
+    font-size: 40px;
+}
+
+#nav h5{
+    font-size: 19px;
+    font-weight:600 ;
+    font-family: neuton;
+    cursor: pointer;
+}
+
+#nav h5:nth-child(2){
+
+    color:#FF5858;
+}
+
+#nav h5:nth-child(3){
+    background-color: #151B31;
+    color:#fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+#nav i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#center{
+    /* background-color: #595555; */
+    text-align: center;
+    padding-top: 50px;
+}
+
+#center h1{
+    font-size: 60px;
+}
+
+#center h1:nth-child(1){
+    color:#FF5858 ;
+}
+
+#center p{
+    font-size: 19px;
+    margin-top: 30px;
+    font-family: gilroy;
+}
+
+#page1 img{
+    margin-top: 60px;
+    width: 84%;
+    margin-left: 8%;
+    
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 60px;
+}
+
+#page2 h2{
+    font-family: neuton;
+    font-size: 4vw;
+}
+
+#page2 p{
+    font-family: neuton;
+    font-size: 1.5vw;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 25px;
+    font-weight: 600;
+    color: #777;
+}
+
+#page2 #elem-container{
+    height: 192vh;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    transition: all ease 0.5s;
+}
+
+#elem-container .elem{
+  height: 90vh;
+  width: 25%;
+  /* background-color:; */
+  margin: 20px 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#nav i{
+    font-size: 30px;
+}
+
+#menu{
+     font-weight: 900;
+     color: #FF5858;
+     display: none;
+}
+
+.elem img{
+    height: 75vh;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px black;
+    transition: all ease 0.5s;
+}
+
+.elem h3{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: neuton;
+    transition: all ease 0.5s;
+}
+
+.elem:hover{
+    background-color: #FFB07B;
+}
+
+.elem img:hover{
+    filter: grayscale(2);
+}
+
+.elem h3:hover {
+    color: #fff;
+}
+
+
+@media (max-width:600px) {
+
+    #nav{
+        gap: 40vw;
+    }
+    #nav-part2{
+        display: none;
+    }
+     
+    #nav-part3 i{
+        display: none;
+    }
+
+    #nav-part3 h5{
+        display: none;
+    }
+
+    #menu {
+        display: block !important;
+        font-size: 50px;
+    }
+
+    #page2{
+        padding: 20px 30px;
+    }
+    #page2 h2{
+        font-size: 10vw;
+    }
+
+    #page2 p{
+        font-size: 5vw;
+        width: 90%;
+    }
+
+    #elem-container .elem{
+        width: 90%;
+    }
+}
+

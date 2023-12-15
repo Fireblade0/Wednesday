@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(50, 50, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#box1{
+    height: 10%;
+    width: 10%;
+    background-color: red;
+}
+#box2{
+    height: 10%;
+    width: 10%;
+    background-color:royalblue;
+    
+    
+}
+#box3{
+    height: 10%;
+    width: 10%;
+    background-color:rgb(16, 218, 131);
+    
+}
